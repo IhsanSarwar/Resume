@@ -3,9 +3,8 @@
   justify-content: space-between; /* pushes text left, link right */
   align-items: center;
   background-color: #63a748dc;
-  color: rgb(241, 241, 241);
   padding: 15px 20px;
-  border-radius: 8px;
+  border-radius: 40px;
   border: 6px solid #000000;
 
 }
@@ -19,26 +18,17 @@ body {
 
 .container {
   background-color: rgba(131, 248, 77, 0.808);
-  max-width: 2000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px;
   border: 6px solid #000000;
-}
+ border-radius: 40px;
 
-.top-heading {
-    color: rgb(66, 150, 59);
 }
 
 .flex-box {
   display: flex;
   gap: 20px;
   align-items: center;
-}
-
-h1 {
-  color: rgb(255, 255, 255);
-  font-size: 36px;
-  margin-bottom: 5px;
 }
 
 h2 {
@@ -48,16 +38,40 @@ h2 {
 }
 
 ul { 
-  line-height: 1.5;
+  line-height: 2;
   padding-left: 20px; 
 }
 
-ul ul {
-  line-height: 1.5;
-  margin-top: 8px;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
 }
-p {
-    
-    line-height: 1.5;
-    margin-bottom: 10px;
+
+input, select, textarea, button {
+  padding: 10px;
+  font-size: 16px;
 }
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.flex-animation {
+  animation: fadeIn 3s ease-out;
+}
+
+.flex-box img {
+  border: 4px solid black;
+  border-radius: 40px;
+}
+

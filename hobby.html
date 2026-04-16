@@ -6,31 +6,58 @@
   <link rel="stylesheet" href="hobby.css">
 </head>
 
+<body>
 <nav class="navbar">
   <h2>Welcome to my Hobby Page</h2>
-  <a href="index.html" class="nav-link">Resume</a>
+  <a href="index.html">Resume</a>
 </nav>
-
-    <body>
 
   <div class="flex-box">
   <div class ="container">
     <h2><strong>About My Hobby</strong></h2>
-    <p><strong>I enjoy working out and keeping fit. This is something not only good for the body as it ages but also for keeping the mind active!</strong></p>
+    <ul>
+      <li><strong>I enjoy working out and keeping fit. This is something 
+        not only good for the body as it ages but also for keeping the mind active!</strong></li>
+      <li><strong>I try to keep up with combat sports not only just weight-lifting.  
+        </strong></li>
+      <li><strong>I try to go 4 times a week - Upper Lower, Boxing, Cardio, Full Body.  
+        </strong></li>
+        
+    </ul>
   </div>
 
-  <img src="hobby.jpg" alt="My hobby image" >
+  <img src="hobby.jpg" class="flex-animation" alt="SRC UCR" width = 1000px>
   <section>
     <div class ="container">
-      <h2>Check out the Boxing</h2>
-      <iframe width="560" height="315"
-        src="GymClip.mp4"
-        title="Boxing Video"
-        allowfullscreen>
-      </iframe>
+      <h2>Check out Boxing</h2>
+      <video width="560" height="400" controls>
+      <source src="GymClip.mp4" type="video/mp4">
+      </video>
       </div>
     </section>
 </div>
+
+<div class ="container">
+  <section>
+  <form>
+    <label for="name"><strong>Name:</strong></label>
+    <input type="text" id="name" name="name">
+
+    <label for="goal"><strong>Fitness Goal:</strong></label>
+    <select id="goal" name="goal">
+      <option>Lose Weight</option>
+      <option>Build Muscle</option>
+      <option>Stay Active</option>
+    </select>
+
+    <label for="routine"><strong>What is your Routine?</strong></label>
+    <textarea id="routine" name="routine"></textarea>
+    <button type="submit"><strong><i>Submit</i></strong></button>
+  </form>
+  </section>
+  </div>
+
+
         </div>
     </body>
 </html>
